@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿
+using Microsoft.EntityFrameworkCore;
 
 namespace RestaurantAPI.Models
 {
@@ -13,7 +14,7 @@ namespace RestaurantAPI.Models
         public DbSet<FoodItem> FoodItems { get; set; }
         public DbSet<OrderMaster> OrderMasters { get; set; }
         public DbSet<OrderDetail> OrderDetails { get; set; }
-
+        
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             var configuration = new ConfigurationBuilder()

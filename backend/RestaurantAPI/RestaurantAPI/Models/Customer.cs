@@ -9,6 +9,6 @@ namespace RestaurantAPI.Models
         public int CustomerId { get; set; }
 
         [Column(TypeName ="nvarchar(100)")]
-        public string CustomerName { get; set; }
+        public string? CustomerName { get; set; }
     }
 }

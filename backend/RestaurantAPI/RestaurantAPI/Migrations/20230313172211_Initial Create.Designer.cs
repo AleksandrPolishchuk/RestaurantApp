@@ -11,7 +11,7 @@ using RestaurantAPI.Models;
 namespace RestaurantAPI.Migrations
 {
     [DbContext(typeof(RestaurantDbContext))]
-    [Migration("20230313163800_Initial Create")]
+    [Migration("20230313172211_Initial Create")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -49,7 +49,7 @@ namespace RestaurantAPI.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("FoodItemId"));
 
                     b.Property<string>("FoodItemName")
-                        .HasColumnType("nvarchar(100");
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
@@ -103,10 +103,10 @@ namespace RestaurantAPI.Migrations
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("OrderNumber")
-                        .HasColumnType("nvarchar(75");
+                        .HasColumnType("nvarchar(75)");
 
                     b.Property<string>("PMethod")
-                        .HasColumnType("nvarchar(10");
+                        .HasColumnType("nvarchar(10)");
 
                     b.HasKey("OrderMasterId");
 

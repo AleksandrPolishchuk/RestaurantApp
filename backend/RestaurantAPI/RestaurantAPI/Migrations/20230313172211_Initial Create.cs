@@ -29,7 +29,7 @@ namespace RestaurantAPI.Migrations
                 {
                     FoodItemId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    FoodItemName = table.Column<string>(type: "nvarchar(100", nullable: true),
+                    FoodItemName = table.Column<string>(type: "nvarchar(100)", nullable: true),
                     Price = table.Column<decimal>(type: "decimal(18,2)", nullable: false)
                 },
                 constraints: table =>
@@ -43,9 +43,9 @@ namespace RestaurantAPI.Migrations
                 {
                     OrderMasterId = table.Column<long>(type: "bigint", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    OrderNumber = table.Column<string>(type: "nvarchar(75", nullable: true),
+                    OrderNumber = table.Column<string>(type: "nvarchar(75)", nullable: true),
                     CustomerId = table.Column<int>(type: "int", nullable: false),
-                    PMethod = table.Column<string>(type: "nvarchar(10", nullable: true),
+                    PMethod = table.Column<string>(type: "nvarchar(10)", nullable: true),
                     GTotal = table.Column<decimal>(type: "decimal(18,2)", nullable: false)
                 },
                 constraints: table =>

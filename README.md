@@ -1,3 +1,3 @@
 Fullstack web app
-backend - ASP.NET Core Web API, C# 
-frontend React, JS
+1. Backend - ASP.NET Core Web API, C# 
+2. Frontend React, JS
